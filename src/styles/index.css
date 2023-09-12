@@ -1,0 +1,127 @@
+.filter__container {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__button {
+  display: flex;
+  gap: 32px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main__container {
+  margin-top: 100px;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  justify-content: center; /* Centrer horizontalement les .list__items */
+}
+
+.list__items {
+  padding: 10px;
+  border-radius: var(--radius);
+  border-color: rgba(23, 61, 49, 0.486);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligner le contenu à gauche */
+  gap: 32px;
+  width: 190px;
+  justify-content: space-between; /* Aligner les éléments horizontalement */
+  background-color: rgb(42, 44, 43);
+}
+
+.list__items > figure {
+  display: flex;
+  flex-direction: column; /* Utilisez une disposition en colonne pour les éléments de la figure */
+  align-items: center;
+  gap: 32px; /* Espace vertical entre l'image et le figcaption */
+}
+
+.list__items > figure > img {
+  width: 100%;
+  height: 140px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+.list__items > ol {
+  list-style: decimal;
+  margin: 0; /* Supprimer la marge par défaut */
+  padding-left: 20px; /* Ajouter un espacement à gauche pour les éléments de liste */
+  
+}
+
+.list__items > figcaption {
+  text-align: left; /* Aligner le contenu du figcaption à gauche */
+  color: antiquewhite;
+}
+
+.list__items > button {
+  font-size: 10px;
+  padding: 7px 17px;
+  align-self: flex-end; /* Aligner le bouton à droite */
+  color: white;
+}
+
+.cart__container {
+  width: 290px;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(34, 71, 46);
+  border-radius: 15px;
+}
+
+.cart__header {
+  background-color: rgb(35, 83, 83);
+  color: var(--text-secondary);
+  width: 290px;
+  height: 50px;
+  border-radius: var(--radius-cart);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cart__header > img {
+  width: 32px;
+  font-size: 20px;
+}
+
+.cart__empty {
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer__foot {
+  display: flex;
+  background-color: var(--primary-darck);
+  height: 25px;
+  width: 100%; /* Ajoutez cette ligne pour que le footer occupe toute la largeur de la page */
+  border-radius: 20px;
+  border: 1px solid rgb(71, 70, 68);
+}
+
+.text__footer {
+  width: 100vw;
+  text-align: center;
+  font-family: "poppin";
+  font-weight: bold;
+  height: 50%;
+  padding: 5px;
+}
